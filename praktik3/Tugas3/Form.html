@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form pemesanan barang</title>
+  </head>
+  <body style="font-family: sans-serif">
+    <!--Nama : Muhammad Mikail musa-->
+    <!--Rombel: TI-01-->
+    <!--tugas praktikum 1.B-->
+    <!--navbar-->
+    <table
+      style="
+        background-color: beige;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+      "
+    >
+      <tr>
+        <td style="text-align: center">
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none; color: black"
+            >Home</a
+          >
+        </td>
+        <td style="text-align: center">
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none; color: black"
+            >Generate link</a
+          >
+        </td>
+        <td style="text-align: center">
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none; color: black"
+            >Transaction history</a
+          >
+        </td>
+        <td style="text-align: center">
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none; color: black"
+            >Policy</a
+          >
+        </td>
+        <td style="text-align: center">
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none; color: black"
+            >Logout</a
+          >
+        </td>
+      </tr>
+    </table>
+    <!--form-->
+    <form action="/invoice.html" method="post">
+      <table style="margin-left: 10%; margin-right: 10%; margin-top: 1%">
+        <tr>
+          <td style="width: 200px">title here:</td>
+          <td>
+            <input
+              placeholder="Title of the product"
+              style="
+                border-radius: 10px;
+                font-family: sans-serif;
+                padding: 10px 5px;
+              "
+              type="text"
+              name="judul"
+              id="judul"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Description:</td>
+          <td>
+            <textarea
+              placeholder="series, Model, condition"
+              style="
+                border-radius: 10px;
+                font-family: sans-serif;
+                padding: 10px 5px;
+              "
+              name="deskripsi"
+              id="deskripsi"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Account number:</td>
+          <td>
+            <input
+              placeholder="Your Bank account number"
+              style="
+                border-radius: 10px;
+                font-family: sans-serif;
+                padding: 10px 5px;
+              "
+              type="number"
+              name="akun"
+              id="akun"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Bank:</td>
+          <td>
+            <select
+              style="
+                border-radius: 10px;
+                font-family: sans-serif;
+                padding: 10px 5px;
+                width: auto;
+              "
+              name="bank"
+              id="bank"
+            >
+              <option value="invalid">select bank</option>
+              <option value="bank1">Mandiri</option>
+              <option value="bank2">BRI</option>
+              <option value="bank3">BCA</option>
+              <option value="bank4">BNI</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Account holder:</td>
+          <td>
+            <input
+              placeholder="The name of the account holder"
+              style="
+                border-radius: 10px;
+                font-family: sans-serif;
+                padding: 10px 5px;
+              "
+              type="text"
+              name="akunbank"
+              id="akunbank"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Transaction</td>
+          <td>
+            <select
+              style="
+                border-radius: 10px;
+                font-family: sans-serif;
+                padding: 10px 5px;
+                width: auto;
+              "
+              name="number"
+              id="number"
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <p>
+              *if the transaction is for 3 person choose 3 from the drop-down
+              list,
+            </p>
+            <p style="color: green">
+              <input type="checkbox" name="sendtophone" id="sendtophone" /> Send
+              to mobile phone
+            </p>
+            <p style="color: green">
+              <input type="checkbox" name="sendemail" id="sendemail" /> Send to
+              Email
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>Send to mobile phone:</td>
+          <td>
+            <input
+              placeholder="your phone number"
+              style="
+                border-radius: 10px;
+                font-family: sans-serif;
+                padding: 10px 5px;
+              "
+              type="number"
+              name="phonenumber"
+              id="phonenumber"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Send to email:</td>
+          <td>
+            <input
+              placeholder="Your email"
+              style="
+                border-radius: 10px;
+                font-family: sans-serif;
+                padding: 10px 5px;
+              "
+              type="email"
+              name="email"
+              id="email"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              style="
+                background-color: #3498db;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+              "
+              type="submit"
+              value="Generate Link"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
