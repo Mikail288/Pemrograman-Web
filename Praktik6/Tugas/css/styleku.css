@@ -1,0 +1,10 @@
+body{background-color: beige; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+h1{color: blue; font-weight: bold; text-align: center;}
+h3{font-weight: bolder;}
+blockquote{background-color: yellow; text-align: center; border-top: 1px dotted black;}
+p{text-align: justify;}
+#header{background-color: burlywood ; padding: 20px;}
+#nav{margin: 0 auto; display: block; width: 20%; text-align: center;}
+#nav li{display: inline; text-decoration: none;}
+.gambar {width: 55%; display: block; margin-left: auto; margin-right: auto;}
+#awal{font-size: 40px; font-weight: bold; color: blue;}
