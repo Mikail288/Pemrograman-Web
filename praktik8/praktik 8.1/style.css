@@ -1,0 +1,24 @@
+header{
+    background-color: aliceblue;
+    margin: -10px;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0.5em;
+    margin: 0;
+}
+header li{
+    margin: 0 1em;
+}
+header li.logo{
+    margin-right: auto;
+}
+header img.logo{
+    width: 10%;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}

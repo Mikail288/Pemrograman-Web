@@ -1,0 +1,38 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    background-color: navajowhite;
+    padding: 10px;
+}
+.content{
+    display: flex;
+    flex: 1;
+}
+article {
+    background-color: white;
+    flex: 4;
+    padding: 10px;
+}
+aside{
+    background-color: pink;
+    flex: 1;
+    padding: 10px;
+}
+nav{
+    background-color: aqua;
+    flex: 1;
+    padding: 10px;
+}
+footer{
+    background-color: navajowhite;
+    padding: 10px;
+}
