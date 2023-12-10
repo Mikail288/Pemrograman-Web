@@ -1,4 +1,4 @@
-body {
+body p {
   font-family: "Poppins", sans-serif;
 }
 
@@ -18,7 +18,6 @@ body {
 
 .hero-container {
   height: 80vh;
-  background-color: white;
   padding-top: 300px;
   padding-bottom: 250px;
 }
