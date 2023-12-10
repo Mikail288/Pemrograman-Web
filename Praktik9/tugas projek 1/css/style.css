@@ -1,0 +1,36 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-primary {
+  background-color: #00adcf;
+  border: #00adcf;
+}
+
+.text-primary-new {
+  color: #00adcf;
+}
+
+.navbar .navbar-nav a {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.hero-container {
+  height: 80vh;
+  background-color: white;
+  padding-top: 300px;
+  padding-bottom: 250px;
+}
+
+.hero-container .description {
+  width: 45rem;
+}
+
+.hero-container .description h1 {
+  font-size: 60px;
+}
+
+.hero-container .description h2 {
+  font-size: 30px;
+}
