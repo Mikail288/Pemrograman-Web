@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Image Picker</title>
+  </head>
+  <body style="background-color: rgb(33, 99, 156); color: white">
+    <h1>los pinguinos me la van a mascar</h1>
+    <audio controls autoplay loop>
+      <source
+        src="los-pinguinos-me-lavan-amascar-made-with-Voicemod-technology.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <br />
+    <select id="selectPinguinos">
+      <option value="lospinguinos.png" selected>Los pinguinos</option>
+      <option value="kawazaki.jpg">kawazaki</option>
+      <option value="cago.jpg">cago</option>
+      <option value="krico.png">krico</option>
+      <option value="estriper.png">estriper</option>
+    </select>
+    <br />
+    <img style="width: 98vw" stysrc="" id="image" />
+
+    <script>
+      //ambil elemen
+      const select = document.getElementById("selectPinguinos");
+      const image = document.getElementById("image");
+      select.addEventListener("change", function () {
+        image.src = select.value;
+      });
+      image.src = select.value;
+    </script>
+  </body>
+</html>

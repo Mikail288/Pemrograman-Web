@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbox</title>
+  </head>
+  <body>
+    <div style="border: 1px solid black; width: 250px">
+      <div id="box" style="height: 250px; overflow-y: auto"></div>
+
+      <div>
+        <input
+          on
+          style="width: 190px"
+          type="text"
+          id="msgInput"
+          placeholder="Type your message here..."
+        />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+    <script>
+      function sendMessage() {
+        //ambil elemen
+        const box = document.getElementById("box");
+        const msgInput = document.getElementById("msgInput");
+        // tampilkan chat ke box dengan balon kata
+        box.innerHTML += msgInput.value + "<br>";
+        //bersihin isian inputan
+        // msgInput.value = "";
+        box.scrollTop = box.scrollHeight;
+      }
+    </script>
+  </body>
+</html>
